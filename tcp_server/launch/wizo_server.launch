@@ -1,0 +1,8 @@
+<!-- Launch File -->
+<launch>
+    <rosparam command="load" file="$(find tcp_server)/config/config.yaml" />
+    <rosparam command="load" file="$(find tcp_server)/config/masterCmd.yaml" />
+    <node pkg="tcp_server" name="wizo_server" type="server_node" output="screen" respawn="false">
+	    </node>
+
+</launch>

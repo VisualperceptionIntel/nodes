@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <name>tcp_server</name>
+  <version>0.0.1</version>
+  <description>A package for communicating between ROS and other applications using TCP/IP protocol.</description>
+
+
+  <maintainer email="mahindan@didrivers.com">Mahindan C Nadesapillai</maintainer>
+
+  <license>MIT</license>
+
+
+  <author email="mahindan@didrivers.com">Mahindan C Nadesapillai</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>segway_msgs</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>libmysqlclient-dev</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>segway_msgs</run_depend>
+  <run_depend>cmake_modules</run_depend>
+  <run_depend>libmysqlclient-dev</run_depend>
+
+
+
+
+  <export>
+  
+  </export>
+</package>

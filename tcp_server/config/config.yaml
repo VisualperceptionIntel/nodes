@@ -1,0 +1,27 @@
+port: 13000
+display:
+  - mysql_update_log: true
+  - log: true
+  - time: true
+  - client_msg:true 
+runtime_mode:
+  - release: true
+
+rate:
+  - update_control_unit_db: 600
+  - update_log_db: 100
+  - retrieve_db: 60 
+
+client_send_format:
+  - arms: str
+  - base: str
+  - detect: str
+  - face: json
+  - lights: str
+  - printer: str
+  - scanner: str
+  - object_detect: str
+  - welcome: str
+  - master_request: str
+  - qa: json
+

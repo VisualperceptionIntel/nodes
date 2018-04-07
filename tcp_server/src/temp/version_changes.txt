@@ -1,0 +1,26 @@
+server_node.cpp:
+20170328: modified to a change Right arm move and Left arm move to represent the actions passed by any client
+
+walk = 4
+pick = 5
+place = 7
+wave = 3
+home or any = 1
+
+validity of LEFT_ARM_MOVE and RIGHT_ARM_MOVE changed from 0-1 to 0-100 so that we can have different values for different actions
+
+20170329: integrated the mysql query for retrieval of visitor/host information when scanner update is called.. this function could be called under any other updates function such as face recognition updates if id card holder will be updated.
+
+modified the update sql, sql to arrayfunctions and few other declaration to accept command unit and is_updated to be passed.
+
+20170403: integrated a linked list to store logs. only implemented on scanner id name out come... implementation for other updates needs to be done.
+
+server_node.h:
+created some defined values for each actions mentioned above
+20170329: moved some of the declerations of struct, and functions. to allow easy usage of function in source cpp
+
+20170403: includes a struct for linked list to store the logs
+
+colour definitions
+
+
